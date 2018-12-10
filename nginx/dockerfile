@@ -1,0 +1,4 @@
+FROM nginx
+COPY ./nginx.conf /etc/nginx/nginx.conf
+COPY ./chained.pem /etc/nginx/
+COPY ./key.pem /etc/nginx/

@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  ss:
+    image: gyteng/ssmgr
+    network_mode: "host"
+    volumes:
+      - ./manager:/root/.ssmgr/
+    command: bash /root/.ssmgr/start.sh
+    restart: always
+
+  nginx:
+    build: nginx
+    network_mode: "host"
+    depends_on:
+      - ss
+    restart: always

@@ -1,0 +1,16 @@
+type: s
+
+shadowsocks:
+  address: 127.0.0.1:55552
+
+manager:
+  address: 0.0.0.0:55553
+  password: 'a8sg2d#f!4e%&'
+
+db: 'db.sqlite'
+
+# db:
+#   host: '1.1.1.1'
+#   user: 'root'
+#   password: 'abcdefg'
+#   database: 'ssmgr'
