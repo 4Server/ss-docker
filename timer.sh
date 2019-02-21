@@ -1,1 +1,1 @@
-0 0 */1 * * cd ~/ss-docker-master && docker-compose restart
+* * */1 * * cd ~/ss-docker-master && docker-compose restart
